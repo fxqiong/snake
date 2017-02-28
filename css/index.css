@@ -1,0 +1,177 @@
+body{
+	margin:0;
+	padding:0;
+    font-family:"微软雅黑";
+}
+body,html{
+	width:100%;
+	height:100%;
+}
+audio{
+    display: none;
+}
+.bg{
+	width:100%;
+	height:100%;
+	background: url(../images/bg6.jpg) center center;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+.go{
+	width: 200px;
+	height: 50%;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -100px;
+	z-index: 20000;
+	transform: rotateX(90deg);
+	transform-origin: -50% 0;
+}
+.go.active{
+	transform: rotateX(0deg);
+	transition: all 0.8s ease 0.8s;
+}
+.go-line{
+	width: 10px;
+	height: 100%;
+	background: #460334;
+	margin-left: 95px;
+	box-shadow: 0 0 5px yellow;
+}
+.go-circle{
+	width: 200px;
+	height: 140px;
+	position: absolute;
+	left: 0;
+	bottom: -70px;
+	background-image: linear-gradient(#460334,#FE5505);
+	border-radius: 50%;
+	box-shadow: 0 0 10px yellow;
+	text-align: center;
+	line-height: 140px;
+	font-size: 30px;
+	font-weight: bold;
+	color: green;
+	cursor: pointer;
+}
+.door-left{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url("../images/bg2.jpg") center;
+	background-size: cover;
+	z-index:100;
+	transform: translateX(0);
+	transition: all 0.8s ease;
+}
+.door-left.active{
+	transform: translateX(-100%);
+}
+.door-right.active{
+	transform: translateX(100%);
+}
+.door-right{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	background: url(../images/bg1.jpg) center;
+	background-size: cover;
+	z-index:100;
+	transform: translateX(0);
+	transition: all 0.8s ease;
+}
+.scence{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right:0;
+	top:0;
+	margin:auto;
+	z-index:20;
+	width: 600px;
+	height:600px;
+	background: rgba(77,237,23,0.3);
+	border: 1px solid red;
+}
+.block{
+	width:30px;
+	height:30px;
+	float: left;
+	box-shadow: 0 0 1px yellow;
+}
+.she{
+    background: #142033;
+    border-radius: 10px;
+}
+.food{
+    background: #ff3d19;
+    border-radius: 10px;
+}
+.anniu{
+	position: absolute;
+	top:30px;
+	left:50%;
+	margin-left: -420px;
+}
+.anniu div{
+	width: 100px;
+	height: 40px;
+	background-color: red;
+	line-height: 40px;
+	text-align: center;
+	font-size: 22px;
+	color: white;
+	cursor: pointer;
+	border-radius: 6px;
+	font-weight: bold;
+	border: 2px solid yellow;
+	margin-top:5px;
+}
+.anniu div:active{
+   opacity: 0.8;
+}
+.game-over{
+	width: 200px;
+	height: 50px;
+	background-color: white;
+	color: red;
+	border-radius: 10px;
+	border: 3px solid black;
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+    z-index: 20;
+	margin-top: -25px;
+	margin-left: -100px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
+.game-over.active{
+	display: block;
+}
+.score{
+	position: absolute;
+	right:-170px;
+	top:30px;
+	width: 150px;
+	height: 40px;
+	background-color: red;
+	line-height: 40px;
+	text-align: center;
+	font-size: 22px;
+	color: white;
+	cursor: pointer;
+	border-radius: 6px;
+	font-weight: bold;
+	border: 2px solid yellow;
+	margin-top:5px;
+}
